@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-sm
+  text-gray-800;
+}
+
+h1 {
+  @apply text-2xl 
+  py-2.5;
+}
+
+h2 {
+  @apply text-xl 
+  py-1.5;
+}
+
+hr {
+  @apply border-t-0
+  border-b 
+  border-gray-300
+  mb-5;
+}
+
+a,
+.link {
+  @apply text-sky-600
+  hover:underline
+  focus-visible:ring-4
+  focus-visible:ring-gray-200 
+  focus-visible:outline-none
+  rounded-sm
+  hover:text-sky-700
+  active:text-sky-500
+  bg-transparent
+  hover:!bg-transparent;
+}
+
+.linkDisabled {
+  @apply text-gray-500
+  hover:text-gray-500
+  active:text-gray-500;
+}
+
+.linkMono {
+  @apply text-gray-800
+  hover:text-gray-800
+  active:text-gray-700;
+}
